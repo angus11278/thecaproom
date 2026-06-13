@@ -161,7 +161,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:2;opac
 .tk b{color:#F2EAD6;font-weight:600}
 .tk-up{color:#4FD1C5}.tk-dn{color:#C26B7E}.tk-fl{color:rgba(242,234,214,.45)}
 .hero3d{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;perspective:1150px;position:relative;overflow:hidden;padding:40px 20px}
-.scene{transform-style:preserve-3d;transition:transform .25s ease-out;position:relative;width:min(880px,94vw)}
+.scene{transform-style:preserve-3d;transition:transform .25s ease-out;position:relative;width:min(880px,94vw);height:min(560px,68vh);margin:0 auto}
 .h3-title{text-align:center;margin-bottom:6px}
 .h3-title h1{font-family:'Oswald';font-weight:700;font-size:clamp(52px,9vw,118px);letter-spacing:.04em;color:#F2EAD6;line-height:.95}
 .h3-title h1 span{color:#4FD1C5}
@@ -173,7 +173,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:2;opac
 .gate .gn{font-family:'IBM Plex Mono';font-size:9px;letter-spacing:.3em;color:#4FD1C5;display:block}
 .gate .gt{font-family:'Oswald';font-weight:600;font-size:16px;letter-spacing:.06em;color:#F2EAD6;display:block;margin-top:4px;text-transform:uppercase}
 .gate .gd{font-family:'Barlow';font-size:11px;color:rgba(242,234,214,.55);display:block;margin-top:3px;line-height:1.35}
-.h3-cue{font-family:'IBM Plex Mono';font-size:11px;letter-spacing:.3em;color:rgba(242,234,214,.5);text-align:center;margin-top:26px}
+.h3-cue{font-family:'IBM Plex Mono';font-size:11px;letter-spacing:.3em;color:rgba(242,234,214,.5);text-align:center;margin-top:38px;position:relative;z-index:3}
 @media (prefers-reduced-motion: reduce){.ticker{animation:none}.scene{transition:none}}
 @media(max-width:880px){.gate{position:static;width:auto;margin:6px}.gates{position:static;display:grid;grid-template-columns:1fr 1fr;gap:0;transform:none}}
 
@@ -184,7 +184,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:2;opac
 .hero3d .h3-title h1{text-shadow:0 4px 30px rgba(0,0,0,.65)}
 .scene{min-height:430px}
 .gate{background:rgba(5,13,28,.72);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);box-shadow:0 8px 30px rgba(0,0,0,.45)}
-.photo-credit{position:absolute;right:14px;bottom:10px;z-index:2;font-family:'IBM Plex Mono';font-size:9px;letter-spacing:.2em;color:rgba(242,234,214,.4)}
+.photo-credit{position:absolute;right:14px;bottom:10px;z-index:4;font-family:'IBM Plex Mono';font-size:9px;letter-spacing:.2em;color:rgba(242,234,214,.4)}
 
 .view-off{display:none!important}
 header nav{overflow-x:auto;white-space:nowrap;scrollbar-width:none}
@@ -206,7 +206,7 @@ header nav a.on{color:#4FD1C5;border-bottom-color:#4FD1C5}
 <section class="hero3d" id="enter"><div class="hero-photo" role="img" aria-label="The Melbourne Cricket Ground from the stands, the field in sunlight"></div>
   <div class="h3-title"><h1>THE CAP <span>ROOM</span></h1></div>
   <div class="h3-sub">THE HIDDEN ECONOMY OF AUSTRALIAN FOOTBALL</div>
-  <div class="scene" id="scene"><div class="gates"><a class="gate" href="#index" style="left:3%;top:6%;transform:translateZ(90px)"><span class="gn">GATE I</span><span class="gt">THE INDEX</span><span class="gd">Who builds the most strength per cap dollar</span></a><a class="gate" href="#luck" style="right:3%;top:6%;transform:translateZ(90px)"><span class="gn">GATE II</span><span class="gt">THE LUCK LEDGER</span><span class="gd">What the market gave, and took back</span></a><a class="gate" href="#players" style="left:1%;top:52%;transform:translateZ(90px)"><span class="gn">GATE III</span><span class="gt">THE PLAYERS</span><span class="gd">Production valued, Brownlow held out</span></a><a class="gate" href="#money" style="right:1%;top:52%;transform:translateZ(90px)"><span class="gn">GATE IV</span><span class="gt">THE MONEY</span><span class="gd">Paid versus deserved, in honest bands</span></a><a class="gate" href="#clubs" style="left:18%;top:92%;transform:translateZ(90px)"><span class="gn">GATE V</span><span class="gt">THE CLUBS</span><span class="gd">Eighteen pages, every ground, every era</span></a><a class="gate" href="#rivalries" style="right:18%;top:92%;transform:translateZ(90px)"><span class="gn">GATE VI</span><span class="gt">RIVALRIES</span><span class="gd">Weave any two clubs from 14,915 games</span></a></div></div>
+  <div class="scene" id="scene"><div class="gates"><a class="gate" href="#index" style="left:0%;top:4%;transform:translateZ(90px)"><span class="gn">GATE I</span><span class="gt">THE INDEX</span><span class="gd">Who builds the most strength per cap dollar</span></a><a class="gate" href="#luck" style="right:0%;top:4%;transform:translateZ(90px)"><span class="gn">GATE II</span><span class="gt">THE LUCK LEDGER</span><span class="gd">What the market gave, and took back</span></a><a class="gate" href="#players" style="left:-2%;top:38%;transform:translateZ(90px)"><span class="gn">GATE III</span><span class="gt">THE PLAYERS</span><span class="gd">Production valued, Brownlow held out</span></a><a class="gate" href="#money" style="right:-2%;top:38%;transform:translateZ(90px)"><span class="gn">GATE IV</span><span class="gt">THE MONEY</span><span class="gd">Paid versus deserved, in honest bands</span></a><a class="gate" href="#clubs" style="left:14%;top:72%;transform:translateZ(90px)"><span class="gn">GATE V</span><span class="gt">THE CLUBS</span><span class="gd">Eighteen pages, every ground, every era</span></a><a class="gate" href="#rivalries" style="right:14%;top:72%;transform:translateZ(90px)"><span class="gn">GATE VI</span><span class="gt">RIVALRIES</span><span class="gd">Weave any two clubs from 14,915 games</span></a></div></div>
   <div class="photo-credit">THE G, FROM THE STANDS &middot; SUPPLIED</div><div class="h3-cue"><span style="color:#4FD1C5"><!--DATASTAMP-->DATA TO 2026-06-08<!--/DATASTAMP--></span> &middot; EVERY NUMBER AUDITED &middot; EVERY KILL PUBLISHED &middot; PICK A GATE</div>
 </section>
 
